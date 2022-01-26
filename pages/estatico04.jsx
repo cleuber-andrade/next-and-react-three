@@ -1,3 +1,7 @@
+//consumindo API com o metodo getStaticProps e utilizando a função async
+
+//conectado com /pages/api/produtos
+
 export async function getStaticProps() {
   const resp = await fetch("http://localhost:3000/api/produtos");
   const produtos = await resp.json();
