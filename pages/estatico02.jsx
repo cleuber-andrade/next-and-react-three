@@ -1,4 +1,4 @@
-//Esse método é referenciando que o conteúdo da pagina é um conteúdo estático.
+//Esse método utilizado quando o conteúdo da pagina é um conteúdo estático.
 
 //Esse método por sua vez, vai tentar obter a props do component apartir desse metodo getStaticProps
 
