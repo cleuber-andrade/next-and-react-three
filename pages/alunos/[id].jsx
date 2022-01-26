@@ -16,6 +16,7 @@ export async function getStaticPaths(){
 }
 
 export async function getStaticProps({ params }){
+  console.log(params);
   const resp = await fetch(`http://localhost:3000/api/alunos/${params.id}`);
   const aluno = await resp.json();
   
