@@ -6,7 +6,7 @@ export async function getStaticPaths(){
   const ids = await resp.json();
 
   const paths = ids.map(id =>{
-    return{ params: {id}}
+    return{ params: {id: `${id}`}}
   }) 
 
   return {
@@ -26,8 +26,7 @@ export async function getStaticProps({ params }){
   }
 }
 
-export default function AlunoPorId(props){
-  const { aluno } = props;
+export default function AlunoPorId({ aluno }){  
 
   return (
     <div>
