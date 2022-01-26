@@ -31,11 +31,15 @@ export default function AlunoPorId({ aluno }){
   return (
     <div>
       <h1>Detalhes do Aluno</h1>
-      <ul>
-        <li>{aluno.id}</li>
-        <li>{aluno.nome}</li>
-        <li>{aluno.email}</li>
-      </ul>
+      {aluno ? 
+        <ul>
+          <li>{aluno.id}</li>
+          <li>{aluno.nome}</li>
+          <li>{aluno.email}</li>
+        </ul>
+      :
+        false
+      }      
     </div>
   )
 }
